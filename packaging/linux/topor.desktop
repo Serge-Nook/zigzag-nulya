@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Топор
+Name[en]=Topor
+Comment=Массовый редактор метаданных и временных штампов файлов
+Comment[en]=Batch file metadata and timestamp editor
+Exec=topor
+Icon=topor
+Type=Application
+Categories=Utility;Office;
+Terminal=false
+StartupNotify=true
+MimeType=application/vnd.openxmlformats-officedocument.wordprocessingml.document;application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;application/msword;application/vnd.ms-excel;application/vnd.oasis.opendocument.text;text/html;text/plain;text/rtf;text/xml;

@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "topor"
+version = "1.0.0"
+description = "Массовый редактор метаданных и временных штампов файлов"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Горшков Сергей Владимирович", email = "nookbat@gmail.com"},
+]
+keywords = ["metadata", "timestamps", "file-editor", "batch-processing"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "PyQt6>=6.6.0,<6.9",
+    "olefile>=0.47,<0.48",
+    "lxml>=5.1.0,<5.4",
+]
+
+[project.urls]
+Homepage = "https://nookbat.ru/"
+Repository = "https://github.com/Serge-Nook/zigzag-nulya"
+
+[project.gui-scripts]
+topor = "topor.app:main"
+
+[project.scripts]
+topor-cli = "topor.app:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+topor = ["*.png", "*.svg", "*.ico"]
