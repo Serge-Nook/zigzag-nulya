@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=T0P0R
+Comment=Изменение дат файлов и автора документов Word и Excel
+Exec=topor
+Icon=topor
+Terminal=false
+Categories=Utility;FileTools;
