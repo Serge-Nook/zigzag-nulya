@@ -1,0 +1,32 @@
+appId: ai.cognition.zigzagnulya
+productName: Zigzag Nulya
+directories:
+  buildResources: build
+files:
+  - '!**/.vscode/*'
+  - '!src/*'
+  - '!electron.vite.config.{js,ts,mjs,cjs}'
+  - '!{.eslintrc.cjs,.prettierrc.yaml,.prettierignore}'
+  - '!{tsconfig.json,tsconfig.node.json,tsconfig.web.json}'
+asarUnpack:
+  - resources/**
+win:
+  target:
+    - nsis
+  artifactName: ${name}-${version}-setup.${ext}
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+mac:
+  target:
+    - dmg
+  category: public.app-category.utilities
+linux:
+  target:
+    - deb
+    - AppImage
+  maintainer: Горшков Сергей Владимирович <info@nookbat.ru>
+  vendor: Горшков Сергей Владимирович
+  category: Utility
+  artifactName: ${name}-${version}.${ext}
+npmRebuild: false
